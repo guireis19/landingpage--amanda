@@ -42,7 +42,6 @@
         #tiktok-banner strong { color: #f8db5c; }
         #tiktok-banner .steps { margin-top: 6px; font-size: 12px; opacity: 0.85; }
 
-        /* Ajuste extra para garantir que o ícone de notificação não suma */
         .wa-notify {
             position: absolute;
             top: -5px;
@@ -60,6 +59,19 @@
             border: 2px solid white;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
+        .avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 
@@ -70,7 +82,7 @@
         <div class="steps">Toque nos 3 pontinhos (···) no canto da tela → "Abrir no navegador"</div>
     </div>
 
-    <a href="https://wa.me/5551993032850" target="_blank" 
+    <a href="https://api.whatsapp.com/send?phone=5551989910880" target="_blank" 
        class="fixed bottom-8 right-8 z-[999] transition transform hover:scale-110 active:scale-95 shadow-2xl rounded-full">
         <div class="relative">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-16 h-16" alt="WhatsApp">
@@ -88,9 +100,10 @@
             <a href="#inicio" class="hover:text-[#f8db5c] transition">Início</a>
             <a href="#sobre" class="hover:text-[#f8db5c] transition">Sobre</a>
             <a href="#servicos" class="hover:text-[#f8db5c] transition">Serviços</a>
+            <a href="#depoimentos" class="hover:text-[#f8db5c] transition">Depoimentos</a>
         </div>
 
-        <a href="https://wa.me/5551993032850" target="_blank" 
+        <a href="https://api.whatsapp.com/send?phone=5551989910880" target="_blank" 
            class="bg-[#f8db5c] text-black px-5 py-2 rounded-full text-sm font-extrabold shadow-lg uppercase hover:bg-white transition flex items-center gap-2">
             <i class="fab fa-whatsapp text-xl"></i>
             <span>WhatsApp</span>
@@ -177,6 +190,67 @@
                     <h3 class="text-xl font-bold mb-4">Atendimento Online e Presencial</h3>
                     <p class="text-gray-500 text-sm">Sua consulta de onde estiver, com total sigilo.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-stone-800">O que dizem nossos consulentes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                <div class="bg-stone-50 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="avatar" style="background: #b45309;">M</div>
+                        <div>
+                            <p class="font-bold text-stone-800">Mariana S.</p>
+                            <div class="flex text-[#f8db5c] text-sm mt-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">"Fiz minha primeira consulta de búzios com a Amanda sem saber muito o que esperar. Saí de lá com o coração leve e com respostas que eu precisava há meses. Ela tem um dom especial e um cuidado imenso com quem a procura."</p>
+                </div>
+
+                <div class="bg-stone-50 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="avatar" style="background: #7c3aed;">R</div>
+                        <div>
+                            <p class="font-bold text-stone-800">Rafael O.</p>
+                            <div class="flex text-[#f8db5c] text-sm mt-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">"Fiz o atendimento online e fiquei surpreso com a precisão. A Amanda captou situações da minha vida que eu não tinha mencionado. O Axé que ela carrega é real e forte. Já indiquei para toda minha família."</p>
+                </div>
+
+                <div class="bg-stone-50 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="avatar" style="background: #0f766e;">C</div>
+                        <div>
+                            <p class="font-bold text-stone-800">Camila R.</p>
+                            <div class="flex text-[#f8db5c] text-sm mt-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">"Estava passando por um momento muito difícil no trabalho e no amor. A consulta com a Amanda me deu clareza e força para seguir em frente. Cada palavra dela fez sentido. Gratidão eterna!"</p>
+                </div>
+
+                <div class="bg-stone-50 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="avatar" style="background: #be185d;">J</div>
+                        <div>
+                            <p class="font-bold text-stone-800">Juliana M.</p>
+                            <div class="flex text-[#f8db5c] text-sm mt-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">"O jogo de búzios da Amanda é diferente de tudo que já vi. Ela não fica em generalidades — vai direto ao ponto com respeito e verdade. Saí da consulta com um plano espiritual claro e muita paz no coração."</p>
+                </div>
+
             </div>
         </div>
     </section>
